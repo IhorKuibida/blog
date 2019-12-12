@@ -46,9 +46,9 @@
 	                  <td>{{$user->name}}</td>
 	                  <td>{{$user->email}}</td>
 	                  <td>
-	                    <img src="{{$user->getImage()}}" alt="" class="img-responsive" width="150">
+	                    <img src="{{$user->getAvatar()}}" alt="" class="img-responsive" width="150">
 	                  </td>
-	                  <td><a href="{{route('users.edit', $user->id)}}" class="fa fa-pencil"></a> 
+	                  <td><a href="{{route('users.edit', $user->id)}}" class="fa fa-pencil"></a>
 	                  {{Form::open(['route'=>['users.destroy', $user->id], 'method'=>'delete'])}}
 	                  <button onclick="return confirm('are you sure?')" type="submit" class="delete">
 	                   <i class="fa fa-remove"></i>
