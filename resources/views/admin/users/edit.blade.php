@@ -40,7 +40,7 @@
               <input type="password" class="form-control" id="exampleInputEmail1" name="password" placeholder="">
             </div>
             <div class="form-group">
-              <img src="{{$user->getImage()}}" alt="" width="200" class="img-responsive">
+              <img src="{{$user->getAvatar()}}" alt="" width="200" class="img-responsive">
               <label for="exampleInputFile">Аватар</label>
               <input type="file" name="avatar" id="exampleInputFile">
 
