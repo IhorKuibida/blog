@@ -50,7 +50,7 @@
                     <img src="{{$post->getImage()}}" alt="" width="100">
                   </td>
                   <td>
-                  <a href="{{route('posts.edit', $post->id)}}" class="fa fa-pencil"></a> 
+                  <a href="{{route('posts.edit', $post->id)}}" class="fa fa-pencil"></a>
 
                   {{Form::open(['route'=>['posts.destroy', $post->id], 'method'=>'delete'])}}
 	                  <button onclick="return confirm('are you sure?')" type="submit" class="delete">
