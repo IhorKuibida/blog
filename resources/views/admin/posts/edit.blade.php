@@ -30,7 +30,7 @@
               <label for="exampleInputEmail1">Название</label>
               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" value="{{$post->title}}" name="title">
             </div>
-            
+
             <div class="form-group">
               <img src="{{$post->getImage()}}" alt="" class="img-responsive" width="200">
               <label for="exampleInputFile">Лицевая картинка</label>
@@ -40,17 +40,17 @@
             </div>
             <div class="form-group">
               <label>Категория</label>
-              {{Form::select('category_id', 
-              	$categories, 
-                $post->getCategoryID(), 
-              	['class' => 'form-control select2'])
-              }}
+{{--              {{Form::select('category_id',--}}
+{{--              	$categories,--}}
+{{--                $post->getCategoryID(), --}}
+{{--              	['class' => 'form-control select2'])--}}
+{{--              }}--}}
             </div>
             <div class="form-group">
               <label>Теги</label>
-              {{Form::select('tags[]', 
-              	$tags, 
-              	$selectedTags, 
+              {{Form::select('tags[]',
+              	$tags,
+              	$selectedTags,
               	['class' => 'form-control select2', 'multiple'=>'multiple','data-placeholder'=>'Выберите теги'])
               }}
             </div>

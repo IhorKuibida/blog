@@ -13,9 +13,9 @@
 
 use Illuminate\Routing\RouteGroup;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+
 Route::group(['prefix'=>'admin', 'namespace'=>'Admin'], function (){
     Route::get('/', 'DashboardController@index');
     Route::resource('/categories', 'CategoriesController');
